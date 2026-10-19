@@ -1,0 +1,32 @@
+name: Feature request
+description: Suggest something that would make your UI reviews faster.
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: You can write in English, Spanish or French.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What slows you down today
+      description: The problem first; we can find the best solution together.
+      placeholder: When I review a long form I have to capture it in three parts.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What you would like
+      placeholder: A way to ...
+  - type: dropdown
+    id: ai
+    attributes:
+      label: Where you paste the report
+      multiple: true
+      options:
+        - Claude
+        - ChatGPT
+        - Cursor
+        - GitHub Copilot
+        - An issue tracker (GitHub, Jira, Linear...)
+        - Other

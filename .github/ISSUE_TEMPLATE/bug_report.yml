@@ -1,0 +1,54 @@
+name: Bug report
+description: Something in the extension does not work as expected.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time. A capture or a short video helps a lot (you can make one with Punchlist itself). You can write in English, Spanish or French.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected and what happened instead.
+      placeholder: I captured a region on a page with a sticky header and the header showed up twice.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open ...
+        2. Click ...
+        3. See ...
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where
+      options:
+        - Capture (visible, full page or region)
+        - Editor (marks, crop, report)
+        - Device mode
+        - Video recording
+        - Console errors
+        - Text editing mode
+        - Popup or shortcuts
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Extension version
+      description: You can see it in the top right of the editor or in chrome://extensions.
+      placeholder: "0.15.0"
+  - type: input
+    id: browser
+    attributes:
+      label: Chrome version and OS
+      placeholder: Chrome 130 on Windows 11
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots or video
+      description: Drag files here. Please hide any private data first.

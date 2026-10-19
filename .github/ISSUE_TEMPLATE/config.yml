@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ideas and questions
+    url: https://github.com/ideaspuff/punchlist-for-devs/discussions
+    about: Share how you use Punchlist, ask anything or propose an idea.
+  - name: Install from the Chrome Web Store
+    url: https://chromewebstore.google.com/detail/punchlist-for-devs/gcffhkjonlkafgglgpfbpadoijjimeme
+    about: Get the latest version of the extension.
